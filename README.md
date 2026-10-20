@@ -1,4 +1,4 @@
-# Staylume — Hotel Discovery (Frontend Take-Home)
+# Staylume — Hotel Discovery (Frontend)
 
 A lightweight React + Vite single-page app for browsing 40 hotels across
 10 cities. Implements the three required flows — filterable dashboard,
