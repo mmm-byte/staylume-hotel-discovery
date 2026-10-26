@@ -52,7 +52,7 @@ export default function App() {
               <path d="M9 22V12l4.5-4h5L23 12v10" fill="none" stroke="#fff" strokeWidth="2" strokeLinejoin="round"/>
               <circle cx="16" cy="14" r="2" fill="#fff"/>
             </svg>
-            <span className="app-brand__word"></span>
+            <span className="app-brand__word">Staylume</span>
           </a>
 
           {/* Top search bar — lives in the header so it's always reachable */}
@@ -82,7 +82,7 @@ export default function App() {
             )}
           </form>
 
-          <span className="spacer" />
+          <a className="app-header__link" href="#stays">Explore stays <span aria-hidden="true">↗</span></a>
         </div>
       </header>
 
@@ -120,38 +120,18 @@ export default function App() {
         <div className="container">
           <div className="app-footer__grid">
             <div>
-              <div className="app-footer__brand"></div>
+              <div className="app-footer__brand">Staylume</div>
               <p className="app-footer__tag">
-                Lightweight hotel discovery for demo purposes. Prices include taxes &amp; fees unless noted.
+                Find a stay that feels like part of the trip. Explore distinctive properties in cities around the world.
               </p>
             </div>
-            <div>
-              <div className="app-footer__heading">Company</div>
-              <ul className="app-footer__list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#press">Press</a></li>
-              </ul>
-            </div>
-            <div>
-              <div className="app-footer__heading">Support</div>
-              <ul className="app-footer__list">
-                <li><a href="#help">Help center</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#status">Status</a></li>
-              </ul>
-            </div>
-            <div>
-              <div className="app-footer__heading">Legal</div>
-              <ul className="app-footer__list">
-                <li><a href="#terms">Terms</a></li>
-                <li><a href="#privacy">Privacy</a></li>
-                <li><a href="#cookies">Cookies</a></li>
-              </ul>
-            </div>
+            <a className="app-footer__source" href="https://github.com/mmm-byte/Hotel-discovery-frontend" target="_blank" rel="noreferrer">
+              Built for curious travelers <span aria-hidden="true">↗</span>
+              <small>Explore the project on GitHub</small>
+            </a>
           </div>
           <div className="app-footer__bottom">
-            <span>© 2026 (demo)</span>
+            <span>© 2026 Staylume</span>
             <span className="spacer" />
             <span>Mock data — no real bookings.</span>
           </div>

@@ -339,10 +339,17 @@ export default function FilterDashboard({
       <div className="hero">
         <div className="hero__bg" aria-hidden="true" />
         <div className="hero__content">
-          <h1 className="hero__title">Find your next stay</h1>
+          <span className="hero__eyebrow"><span /> STAYS WORTH THE JOURNEY</span>
+          <h1 className="hero__title">Make room for<br /><em>somewhere new.</em></h1>
           <p className="hero__subtitle">
-            {hotels.length} {hotels.length === 1 ? 'property' : 'properties'} ready to discover. Prices include taxes &amp; fees.
+            Discover stays with a little more character, in places you can’t wait to explore.
           </p>
+          <a className="hero__action" href="#stays">Explore {hotels.length} stays <span aria-hidden="true">↓</span></a>
+        </div>
+        <div className="hero__visual" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1100&h=900&fit=crop&auto=format&q=85" alt="" />
+          <div className="hero__photo-caption"><span>FEATURED ESCAPE</span><strong>Stay a little differently</strong><span>Curated city escapes</span></div>
+          <div className="hero__stamp"><span>✳</span> FIND YOUR<br />OWN RHYTHM</div>
         </div>
       </div>
 
@@ -488,7 +495,7 @@ export default function FilterDashboard({
       </form>
 
       {/* ---------------- Results header ---------------- */}
-      <div className="results-meta">
+      <div className="results-meta" id="stays">
         <div className="results-meta__count">
           <strong data-testid="result-count">{filtered.length}</strong>{' '}
           of {hotels.length} hotels
